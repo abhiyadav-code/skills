@@ -1,16 +1,16 @@
-# Claude Skills
+# Skills by Abhi
 
-A collection of custom Claude skills built with the [skill-creator](https://claude.ai) tool.
+A personal collection of AI agent skills — built by hand, with Claude's skill-creator, or adapted from other sources.
 
-## What are Claude Skills?
+## What are skills?
 
-Skills are reusable instructions that extend Claude with specialized capabilities. Each skill is a folder containing a `SKILL.md` (the main skill definition) and optional `references/` files.
+Skills are reusable instruction sets that extend AI assistants with specialized capabilities. Each skill lives in its own folder with a `SKILL.md` (the main definition) and an optional `references/` directory for supporting context.
 
 ## Skills in this repo
 
-| Skill | Description |
-|-------|-------------|
-| [review-resume](./review-resume/) | Evaluate a resume against a job posting from a senior recruiter's perspective. Produces a structured fit assessment with match %, percentile ranking, callback-killer issues, and an action plan. |
+| Skill | Source | Description |
+|-------|--------|-------------|
+| [review-resume](./review-resume/) | Claude skill-creator | Evaluate a resume against a job posting from a senior recruiter's perspective. Produces a structured fit assessment with match %, percentile ranking, callback-killer issues, and an action plan. |
 
 ## How to use a skill
 
