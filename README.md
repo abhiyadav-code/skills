@@ -12,6 +12,7 @@ Skills are reusable instruction sets that extend AI assistants with specialized 
 |-------|--------|-------------|
 | [review-resume](./review-resume/) | Claude skill-creator | Evaluate a resume against a job posting from a senior recruiter's perspective. Produces a structured fit assessment with match %, percentile ranking, callback-killer issues, and an action plan. |
 | [pm-twin](./pm-twin/) | Hand-crafted | Acts as a high-level Tech Chief of Staff for PMs. Synthesizes meeting transcripts and chat discussions into product artifacts (PRDs, strategy docs). Search-first, zero-manual-registry. |
+| [daily-brief](./daily-brief/) | Claude skill-creator | Sets up and runs a personalized Daily Executive Brief — a morning digest pulling from Gmail, Google Calendar, Todoist, and newsletters, delivered as a formatted HTML email. |
 
 ## How to use a skill
 
