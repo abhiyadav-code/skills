@@ -1,0 +1,25 @@
+# PM Twin Configuration
+# Usage: This file grounds the Agent in your specific context.
+
+# 1. Pinned Artifacts (The "North Star")
+# The Agent reads these FIRST during a "Synthesis" or "Catch Up" session.
+# Use these for your Roadmap, Priorities, OKRs, or Strategy.
+pinned_docs:
+  - name: "My Priorities"
+    url: "https://docs.google.com/spreadsheets/d/YOUR_DOC_ID_HERE"
+    description: "The ranked list of what I am working on this week."
+
+# 2. Project Mapping (The "Search Guide")
+# Helps the Agent associate transcript mentions with actual projects.
+projects:
+  - name: "Project Alpha"
+    aliases: ["Codename X", "Alpha Team"]
+    # Optional: Hardcode chat space if search is flaky.
+    chat_space: "Project Alpha - Public"
+    # Optional: Hardcode the main PRD/Doc for direct updates.
+    main_doc_url: ""
+
+# 3. Preferences
+preferences:
+  briefing_style: "concise" # or "detailed"
+  search_window_days: 7     # Lookback window for catching up
