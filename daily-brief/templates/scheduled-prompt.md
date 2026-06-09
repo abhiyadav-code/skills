@@ -98,7 +98,7 @@ style="" attributes survive. All layout via <table>/<tr>/<td>. All buttons as
 
 Sections in order:
 
-1. HERO — Blue gradient table cell (#1a73e8), "Good morning, {{USER_NAME}} ☀️",
+1. HERO — Solid blue table cell using bgcolor="#1a73e8" as an HTML attribute (NOT a CSS gradient — Gmail strips linear-gradient and drops the whole style with it), "Good morning, {{USER_NAME}} ☀️",
    date + location, stat boxes (Overdue / Actions Today / Roles / Conflicts)
 
 2. 🎯 PRIORITY ORDER — Top 5 items, numbered circles:
@@ -141,6 +141,9 @@ DESIGN RULES:
 - Card headers: border-bottom:2px solid #f1f3f4, uppercase 12px gray text
 - Buttons: always set bgcolor on the <td> AND background-color in the <a> style
 - Card sections: each in its own <table> with margin-bottom:14px in style
+- NEVER use CSS gradients (linear-gradient / radial-gradient) anywhere. Gmail discards the ENTIRE style attribute when it encounters one, taking the background with it. Use a solid bgcolor on the <td> instead.
+- EVERY colored background must use the bgcolor HTML attribute on a real <td>, mirrored by background-color in the inline style as a fallback. NEVER put a background on a <div> or <span> — Gmail strips those, leaving invisible content (e.g. white text on a white background).
+- Render ALL pills, badges, status tags, date chips, and numbered priority circles as single-cell <table><tr><td bgcolor="..."> blocks — never styled <span> or <div> elements.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 STEP {{STEP_SAVE}} — SAVE HTML FILE
